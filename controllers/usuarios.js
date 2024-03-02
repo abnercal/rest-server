@@ -48,6 +48,11 @@ exports.usuariosPost = async (req, res= response) => {
     }
     
 }
+exports.perfil = async (req, res) =>{
+    const { usuario } = req;
+     res.json(usuario);
+};
+
 exports.usuariosPut = async(req, res= response) => {
     try {
         const {id} = req.params

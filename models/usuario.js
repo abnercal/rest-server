@@ -22,6 +22,10 @@ const UsuarioSchema = Schema({
         required: true,
         emun: ['ADMIN_ROLE','USER_ROLE'],
     },
+    sucursal: {
+        type: Schema.Types.ObjectId,
+        ref:"Sucursal"
+    },
     estado: {
         type: Boolean,
         default: true,
