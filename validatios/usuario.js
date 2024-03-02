@@ -38,3 +38,10 @@ exports.validarBorrar = [
         return validarCampos(req, res, next)
     }
 ];
+
+exports.validarUsuario = [
+    validarJWT,
+    (req,res,next) => {
+        return validarCampos(req,res,next)
+    }
+];
